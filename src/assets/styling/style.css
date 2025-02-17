@@ -1,0 +1,95 @@
+:root{
+    --brown-accent: #8F6847;
+    --inactive-grey: #737373;
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey: #F5F6F6;
+    --navbarHeight: 80px;
+}
+@font-face {
+    font-display: swap;
+    font-family: "dm-sans";
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    src: url("../fonts/DMSans-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "dm-sans";
+    font-style: normal;
+    font-weight: 500; /* Medium */
+    src: url("../fonts/DMSans-Medium.ttf") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "dm-sans";
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    src: url("../fonts/DMSans-Bold.ttf") format("woff");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "dm-sans", sans-serif;
+    font-weight: 400;
+    background: var(--white);
+}
+.bg-inactive-grey{
+    background-color: var(--inactive-grey);
+}
+.bg-transparent{
+    background: transparent;
+}
+.bg-grey{
+    background-color: var(--grey);
+}
+.color-inactive-grey{
+    color: var(--inactive-grey);
+}
+.xui-navbar .links{
+    justify-content: center !important;
+    width: 100%;
+}
+.xui-navbar .links ul li a{
+    color: var(--black);
+}
+.bdr-rad-half{
+    border-radius: .6rem .6rem 0 0;
+}
+.swiper.product-swiper{
+    padding-bottom: 7rem !important;
+}
+.swiper-pagination{
+    top: 510px !important;
+}
+.swiper.product-swiper .swiper-pagination-bullet{
+    width: 25px !important;
+    border-radius: 2rem !important;
+    background-color: var(--inactive-grey);
+    opacity: 1;
+    height: 6px;
+    transition: .6s ease;
+}
+.swiper.product-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: var(--black);
+    width: 40px !important;
+}
+.asc-footer ul li a, .asc-footer ul li{
+    text-decoration: none;
+    font-size: 90%;
+    list-style: none;
+    color: var(--inactive-grey);
+}
+.asc-footer ul li{
+    margin: 1rem 0;
+}
+.asc-footer ul{
+    padding: 0;
+}
+
+@media screen and (max-width: 1024px){
+    
+}
