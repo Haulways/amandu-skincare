@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "../assets/images/logo.png";
 import Send from '../assets/custom-icons/Send';
+import Twitter from '../assets/custom-icons/Twitter';
+import Facebook from '../assets/custom-icons/Facebook';
+import Instagram from '../assets/custom-icons/Instagram';
+import LinkedIn from '../assets/custom-icons/LinkedIn';
 
 const Footer = () => {
     
@@ -11,7 +15,13 @@ const Footer = () => {
             <div className='xui-row'>
                 <div className='xui-lg-col-3 xui-col-12'>
                     <img className='xui-img-150' src={Logo} alt="" />
-                    <p className='xui-line-height-1-half xui-font-sz-85 xui-mt-half xui-lg-w-fluid-95 xui-w-fluid-100 color-inactive-grey'>At Amandu Beauty, we believe self-care is more than a routine—it’s a ritual of self-love andempowerment</p>
+                    <p className='xui-line-height-1-half xui-font-sz-80 xui-mt-half xui-lg-w-fluid-95 xui-w-fluid-100 color-inactive-grey'>At Amandu Beauty, we believe self-care is more than a routine—it’s a ritual of self-love andempowerment</p>
+                    <div className='xui-d-flex xui-flex-ai-center xui-grid-gap-half xui-mt-1'>
+                        <Link to={'/'}><Twitter /></Link>
+                        <Link to={'/'}><Facebook /></Link>
+                        <Link to={'/'}><Instagram /></Link>
+                        <Link to={'/'}><LinkedIn /></Link>
+                    </div>
                 </div>
                 <div className='xui-lg-col-9 xui-col-12 xui-text-black'>
                     <div className='xui-row'>
@@ -40,7 +50,7 @@ const Footer = () => {
                                         <h3 className='xui-font-sz-110 xui-font-w-600'>Newsletter</h3>
                                         <p className='xui-font-sz-80 xui-font-w-500'>&copy; 2025 Powered by Grascope</p>
                                     </div>
-                                    <div className='xui-d-flex xui-mt-1'>
+                                    <div className='xui-d-flex xui-mt-1 asc-newsletter'>
                                         <div style={{width: 'calc(100% - 40px)'}} className='xui-pr-1'>
                                             <input type="email" className='xui-w-fluid-100 xui-text-white xui-pl-1 xui-h-fluid-100 bg-inactive-grey xui-bdr-rad-2 xui-font-sz-85' style={{border: 'none', outline: 'none'}} placeholder='Email address' />
                                         </div>

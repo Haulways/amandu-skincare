@@ -84,10 +84,14 @@ body{
     color: var(--inactive-grey);
 }
 .asc-footer ul li{
-    margin: 1rem 0;
+    margin: .6rem 0;
 }
 .asc-footer ul{
     padding: 0;
+}
+.asc-footer .asc-newsletter input::placeholder{
+    color: #FFF;
+    font-weight: 400;
 }
 
 @media screen and (max-width: 1024px){
