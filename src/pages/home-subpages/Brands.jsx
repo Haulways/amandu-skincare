@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../components/brands/Header';
-import FilterProducts from '../components/brands/FilterProducts';
+import Header from '../../components/home/brands/Header';
+import FilterProducts from '../../components/home/brands/FilterProducts';
 
 const Brands = () => {
     return (

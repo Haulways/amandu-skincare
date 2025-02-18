@@ -9,7 +9,7 @@ import Loader from "./components/Loader";
 
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
-const Brands = lazy(() => import('./pages/Brands'));
+const Brands = lazy(() => import('./pages/home-subpages/Brands'));
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <section className="grascope-body-section">
+      <section className="asc-body-section">
         <Navbar />
         <Suspense fallback={<Loader />}>
           <Routes>
