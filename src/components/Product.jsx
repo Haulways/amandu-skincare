@@ -26,7 +26,7 @@ const Product = () => {
                     </div>
                     <div className='xui-d-flex xui-flex-ai-center xui-flex-jc-space-between xui-mt-1'>
                         <Link to='/' className='xui-text-dc-none xui-font-sz-75 xui-bg-black xui-text-white xui-py-half xui-px-1 xui-bdr-rad-2'>Buy Now</Link>
-                        <button to='/' style={{outline: 'none', background: 'transparent'}} className='xui-text-dc-none xui-font-sz-75 xui-bdr-black xui-bdr-s-solid xui-bdr-w-1 xui-text-black xui-py-half xui-px-1 xui-bdr-rad-2'>Add to cart</button>
+                        <button style={{outline: 'none', background: 'transparent'}} className='xui-text-dc-none xui-font-sz-75 xui-bdr-black xui-bdr-s-solid xui-bdr-w-1 xui-text-black xui-py-half xui-px-1 xui-bdr-rad-2'>Add to cart</button>
                     </div>
                 </div>
             </div>

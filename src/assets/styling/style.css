@@ -57,6 +57,13 @@ body{
 .bdr-inactive-grey{
     border: 1px solid var(--inactive-grey) !important;
 }
+.bdr-linear-gradient1{
+    border-left: 1px solid transparent;
+    border-image-source: linear-gradient(90deg, #896040 0%, #906543 100%);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+
+}
 .color-grey-ii{
     color: #C6C6C6;
 }

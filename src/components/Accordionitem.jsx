@@ -16,11 +16,11 @@ const Accordionitem = ({ data }) => {
           <div className='xui-d-flex xui-flex-ai-center xui-pos-relative'>
             <p className='xui-lg-font-sz-110 xui-font-sz-90 xui-font-w-500 ' style={{"width": "calc(100% - 22px)"}}>{item.question}</p>
             {activeIndex !== index &&
-            <Add />
+            <Add width='22' height='23' />
             
             }
             {activeIndex === index &&
-              <Subtract />
+              <Subtract width='22' height='5' />
             }
         
           </div>
