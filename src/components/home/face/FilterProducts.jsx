@@ -15,13 +15,13 @@ const FilterProducts = () => {
                         <div className="">
                             <label htmlFor="perfume_brand" className='xui-font-w-500'>Filter by Brand Type</label>
                             <select name="perfume_brand"id="perfume_brand" className='bdr-inactive-grey xui-bdr-rad-half'>
-                                <option value="">Perfume Brand</option>
+                                <option value="">Cleansers & Face Washes</option>
                             </select>
                         </div>
                         <div className="xui-form-box">
                             <label htmlFor="perfume_brand" className='xui-font-w-500'>Filter by Product</label>
                             <select name="perfume_brand"id="perfume_brand" className='bdr-inactive-grey xui-bdr-rad-half'>
-                                <option value="">Lattafa</option>
+                                <option value="">CeraVa</option>
                             </select>
                         </div>
                         <div className="xui-form-box">

@@ -8,7 +8,8 @@ export default function Navbar(){
     const location = useLocation();
     const hideNavSearchbar = location.pathname === '/brands' 
     || location.pathname === '/face'
-    || location.pathname === '/bath-and-body';
+    || location.pathname === '/bath-and-body'
+    || location.pathname === '/perfumes-and-scents';
     
     return(
         <>

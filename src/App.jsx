@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Loader from "./components/Loader";
 import BathAndBody from './pages/home-subpages/BathAndBody';
+import PerfumesAndScents from './pages/home-subpages/PerfumesAndScents';
 
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
@@ -30,6 +31,7 @@ function App() {
             <Route path='brands' element={<Brands />} />
             <Route path='face' element={<Face />} />
             <Route path='bath-and-body' element={<BathAndBody />} />
+            <Route path='perfumes-and-scents' element={<PerfumesAndScents />} />
             <Route path='*' element={<h1>No Match</h1>} />
           </Routes>
         </Suspense>
