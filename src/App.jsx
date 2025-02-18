@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <section className="grascope-body-section xui-overflow-hidden">
+      <section className="grascope-body-section">
         <Navbar />
         <Suspense fallback={<Loader />}>
           <Routes>

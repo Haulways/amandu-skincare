@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Product = () => {
     return (
         <div className='asc-product xui-text-black'>
-            <div className='xui-bg-sz-cover xui-bg-pos-center xui-h-250 bdr-rad-half' style={{backgroundImage: `url('${PImage}')`}}>
+            <div className='xui-bg-sz-cover xui-bg-pos-center xui-h-230 bdr-rad-half' style={{backgroundImage: `url('${PImage}')`}}>
                 <div className='xui-p-1 xui-d-flex xui-flex-jc-flex-end'>
                     <span className='xui-w-40 xui-h-40 xui-bg-white xui-bdr-rad-circle xui-d-flex xui-flex-jc-center xui-flex-ai-center'><Heart /></span>
                 </div>

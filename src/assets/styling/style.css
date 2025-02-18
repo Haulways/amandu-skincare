@@ -63,6 +63,9 @@ body{
 .color-inactive-grey{
     color: var(--inactive-grey);
 }
+.xui-h-230{
+    height: 230px;
+}
 .xui-navbar .links{
     justify-content: center !important;
     width: 100%;
@@ -109,6 +112,18 @@ body{
 }
 .asc-filter-products label{
     font-size: 110%;
+}
+.range-slider{
+    height: 3px !important;
+}
+.range-slider .range-slider__range{
+    background: var(--black) !important;
+}
+.range-slider .range-slider__thumb{
+    background: var(--grey-iii) !important;
+    border: 1px solid var(--black);
+    width: 18px !important;
+    height: 18px !important;
 }
 
 @media screen and (max-width: 1024px){
