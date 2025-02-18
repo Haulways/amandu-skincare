@@ -4,11 +4,12 @@ import PImage from "../assets/images/product-image.png";
 import Stars from "../assets/images/stars.png";
 import { Link } from 'react-router-dom';
 
-const Product = () => {
+const Product = (props) => {
+    const { route } = props;
     return (
         <div className='asc-product xui-text-black'>
             <div className='xui-text-dc-none xui-text-black'>
-                <Link to={'/face/radiance'}>
+                <Link to={route}>
                     <div className='xui-pos-relative xui-bg-sz-cover xui-bg-pos-center xui-h-230 bdr-rad-half' style={{backgroundImage: `url('${PImage}')`}}>
                         <span style={{top: '10px', right: '10px'}} className='xui-pos-absolute xui-w-40 xui-h-40 xui-bg-white xui-bdr-rad-circle xui-d-flex xui-flex-jc-center xui-flex-ai-center'><Heart /></span>
                     </div>

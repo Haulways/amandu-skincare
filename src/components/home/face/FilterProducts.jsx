@@ -48,15 +48,15 @@ const FilterProducts = () => {
                 </div>
                 <div className='xui-lg-col-8 xui-col-12 xui-pl-1'>
                     <div className='xui-d-grid xui-lg-grid-col-3 xui-grid-col-1 xui-grid-gap-1'>
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
-                        <Product />
+                        <Product route='/face/radiance' />
+                        <Product route='/face/radiance' />
+                        <Product route='/face/radiance' />
+                        <Product route='/face/radiance' />
+                        <Product route='/face/radiance' />
+                        <Product route='/face/radiance' />
+                        <Product route='/face/radiance' />
+                        <Product route='/face/radiance' />
+                        <Product route='/face/radiance' />
                     </div>
                 </div>
             </div>
