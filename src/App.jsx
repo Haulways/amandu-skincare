@@ -10,6 +10,7 @@ import Loader from "./components/Loader";
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Brands = lazy(() => import('./pages/home-subpages/Brands'));
+const Face = lazy(() => import('./pages/home-subpages/Face'));
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='about' element={<About />} />
             <Route path='brands' element={<Brands />} />
+            <Route path='face' element={<Face />} />
             <Route path='*' element={<h1>No Match</h1>} />
           </Routes>
         </Suspense>
