@@ -2,6 +2,7 @@
     --brown-accent: #8F6847;
     --inactive-grey: #737373;
     --black: #000000;
+    --secondary-black: #0000001A;
     --white: #FFFFFF;
     --grey: #F5F6F6;
     --navbarHeight: 80px;
@@ -45,6 +46,9 @@ body{
 }
 .bg-grey{
     background-color: var(--grey);
+}
+.bg-black-secondary{
+    background-color: var(--secondary-black);
 }
 .color-inactive-grey{
     color: var(--inactive-grey);
