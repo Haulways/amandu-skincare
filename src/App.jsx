@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Loader from "./components/Loader";
 
 const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
 
 function App() {
 
@@ -17,11 +18,12 @@ function App() {
 
   return (
     <>
-      <section className="grascope-body-section xui-text-white xui-overflow-hidden">
+      <section className="grascope-body-section xui-overflow-hidden">
         <Navbar />
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='about' element={<About />} />
             <Route path='*' element={<h1>No Match</h1>} />
           </Routes>
         </Suspense>
