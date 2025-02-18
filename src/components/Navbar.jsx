@@ -1,21 +1,25 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import Logo from '../assets/images/logo.png'
 import Search from '../assets/custom-icons/Search';
 import ProfileLight from '../assets/custom-icons/ProfileLight';
 import Cart from '../assets/custom-icons/Cart';
 
 export default function Navbar(){
+    const location = useLocation();
+    const hideNavSearchbar = location.pathname === '/brands';
     
     return(
         <>
         <section className='asc-top-nav xui-d-flex xui-flex-ai-center xui-flex-jc-space-between xui-container xui-h-70'>
-            <div className='xui-d-flex xui-flex-ai-center xui-bdr-rad-half asc-top-nav-search xui-pl-1' style={{borderBottom: '1px solid #000'}}>
-                <span className='xui-w-30'><Search /></span>
-                <input className='xui-font-sz-85 xui-w-250' type="text" placeholder='Search product...' style={{ border: 'none', outline: 'none'}} />
-            </div>
-            <div className="asc-top-nav-brand xui-h-fluid-100">
+            {!hideNavSearchbar && (
+                <div className='xui-d-flex xui-flex-ai-center xui-bdr-rad-half asc-top-nav-search xui-pl-1' style={{borderBottom: '1px solid #000'}}>
+                    <span className='xui-w-30'><Search /></span>
+                    <input className='xui-font-sz-85 xui-w-250' type="text" placeholder='Search product...' style={{ border: 'none', outline: 'none'}} />
+                </div>
+            )}
+            <div className="asc-top-nav-brand xui-h-fluid-100 xui-py-half">
                 <NavLink className="xui-text-dc-none xui-h-fluid-100 xui-text-inherit xui-d-inline-flex xui-flex-ai-center" to={'/'}>
-                    <img className='xui-img-150' src={Logo} alt="" />
+                    <img className='xui-img-150 xui-h-fluid-100' src={Logo} alt="" />
                 </NavLink>
             </div>
             <div className='xui-d-flex xui-flex-ai-center xui-grid-gap-1'>
@@ -32,38 +36,40 @@ export default function Navbar(){
                 </Link>
             </div>
         </section>
-        <nav className={`xui-navbar asc-navbar `} brand="true" layout="2" menu="2">
-            <div className="links" placed="center">
-                <div className="main dark-color primary bg-navyblue">
-                    <ul className='xui-grid-gap-2'>
-                        <li>
-                            <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"/"}>Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"about"}>About Us</NavLink>
-                        </li>
-                        <li>
-                            <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"brands"}>Brands</NavLink>
-                        </li>
-                        <li>
-                            <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"face"}>Face</NavLink>
-                        </li>
-                        <li>
-                            <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"bath-and-body"}>Bath & Body</NavLink>
-                        </li>
-                        <li>
-                            <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"perfumes-and-scents"}>Perfumes & Scents</NavLink>
-                        </li>
-                     
-                    </ul>
+        {!hideNavSearchbar && (
+            <nav className={`xui-navbar asc-navbar `} brand="true" layout="2" menu="2">
+                <div className="links" placed="center">
+                    <div className="main dark-color primary bg-navyblue">
+                        <ul className='xui-grid-gap-2'>
+                            <li>
+                                <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"/"}>Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"about"}>About Us</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"brands"}>Brands</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"face"}>Face</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"bath-and-body"}>Bath & Body</NavLink>
+                            </li>
+                            <li>
+                                <NavLink className={({ isActive }) => isActive ? 'active-link xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-600' : 'xui-font-sz-90 nav-links xui-md-font-sz-100 xui-lg-font-sz-85 xui-font-w-400'} to={"perfumes-and-scents"}>Perfumes & Scents</NavLink>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    {/* <div className="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> */}
                 </div>
-                {/* <div className="menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div> */}
-            </div>
-        </nav>
+            </nav>
+        )}
         </>
     );
 }

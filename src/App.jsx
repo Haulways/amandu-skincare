@@ -9,6 +9,7 @@ import Loader from "./components/Loader";
 
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
+const Brands = lazy(() => import('./pages/Brands'));
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='about' element={<About />} />
+            <Route path='brands' element={<Brands />} />
             <Route path='*' element={<h1>No Match</h1>} />
           </Routes>
         </Suspense>

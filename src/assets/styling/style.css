@@ -5,6 +5,7 @@
     --secondary-black: #0000001A;
     --white: #FFFFFF;
     --grey: #F5F6F6;
+    --grey-iii: #F5F5F5;
     --navbarHeight: 80px;
 }
 @font-face {
@@ -47,8 +48,17 @@ body{
 .bg-grey{
     background-color: var(--grey);
 }
+.bg-grey-iii{
+    background-color: var(--grey-iii);
+}
 .bg-black-secondary{
     background-color: var(--secondary-black);
+}
+.bdr-inactive-grey{
+    border: 1px solid var(--inactive-grey) !important;
+}
+.color-grey-ii{
+    color: #C6C6C6;
 }
 .color-inactive-grey{
     color: var(--inactive-grey);
@@ -96,6 +106,9 @@ body{
 .asc-footer .asc-newsletter input::placeholder{
     color: #FFF;
     font-weight: 400;
+}
+.asc-filter-products label{
+    font-size: 110%;
 }
 
 @media screen and (max-width: 1024px){
