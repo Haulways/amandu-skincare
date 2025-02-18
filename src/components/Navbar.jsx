@@ -6,7 +6,7 @@ import Cart from '../assets/custom-icons/Cart';
 
 export default function Navbar(){
     const location = useLocation();
-    const hideNavSearchbar = location.pathname === '/brands';
+    const hideNavSearchbar = location.pathname === '/brands' || location.pathname === '/face';
     
     return(
         <>

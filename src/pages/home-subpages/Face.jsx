@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/home/brands/Header';
-import FilterProducts from '../../components/home/brands/FilterProducts';
+import Header from '../../components/home/face/Header';
+import FilterProducts from '../../components/home/face/FilterProducts';
 
 const Face = () => {
     return (

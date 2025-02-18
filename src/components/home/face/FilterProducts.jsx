@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Search from '../../assets/custom-icons/Search';
+import Search from '../../../assets/custom-icons/Search';
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
-import Product from "../Product";
+import Product from "../../Product";
 
 const FilterProducts = () => {
     const [value, setValue] = useState([2999, 999999]);
