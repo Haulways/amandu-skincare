@@ -11,7 +11,7 @@ const Breadcrumbs = (props) => {
                 <ChevronRight />
                 {array && array.map((obj, index) => (
                     <React.Fragment key={index}>
-                        <Link className={'xui-text-inherit'} href={obj.path}>{obj.name}</Link>
+                        <Link className={'xui-text-inherit color-grey-ii xui-text-dc-none'} to={obj.path}>{obj.name}</Link>
                         <ChevronRight />
                     </React.Fragment>
                 ))}
