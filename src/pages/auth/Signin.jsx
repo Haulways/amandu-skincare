@@ -6,7 +6,7 @@ import Lock from '../../assets/custom-icons/Lock';
 import Google from "../../assets/images/google.png";
 import Apple from "../../assets/images/apple.png";
 
-const Signin = () => {
+const Signin = ({ setStep }) => {
     const { register, handleSubmit, setValue, formState: { errors }, reset } = useForm();
     const [inputPassword, setInputPassword] = useState(true);
     const [ isDisabled, setIsDisabled ] = useState(false);
@@ -46,7 +46,7 @@ const Signin = () => {
                         <button className="xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white " disabled={isDisabled}>Sign in</button>
                     </div>
                     <div className="asc-auth-form-grp xui-d-flex xui-flex-jc-flex-end">
-                        <p className='xui-font-sz-85 xui-font-w-500'>Forgot password?</p>
+                        <p className='xui-font-sz-85 xui-font-w-500' onClick={() => setStep(2)}>Forgot password?</p>
                     </div>
                 </form>
                 <div className="or-sign xui-font-sz-85 xui-opacity-8">
