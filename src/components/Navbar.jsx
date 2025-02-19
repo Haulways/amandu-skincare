@@ -3,6 +3,8 @@ import Logo from '../assets/images/logo.png'
 import Search from '../assets/custom-icons/Search';
 import ProfileLight from '../assets/custom-icons/ProfileLight';
 import Cart from '../assets/custom-icons/Cart';
+import Signin from '../pages/auth/Signin';
+import GlobalAuthModal from '../pages/auth/GlobalAuthModal';
 
 export default function Navbar(){
     const location = useLocation();
@@ -11,6 +13,10 @@ export default function Navbar(){
     || location.pathname.startsWith('/face/')
     || location.pathname === '/bath-and-body'
     || location.pathname === '/perfumes-and-scents';
+
+    const seeAccount = () => {
+        window.xuiModalShow('auth-modal');
+    }
     
     return(
         <>
@@ -27,10 +33,10 @@ export default function Navbar(){
                 </NavLink>
             </div>
             <div className='xui-d-flex xui-flex-ai-center xui-grid-gap-1'>
-                <Link to={'/'} className='xui-text-dc-none xui-text-black xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
+                <div onClick={seeAccount} className='xui-text-dc-none xui-text-black xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
                     <span><ProfileLight /></span>
                     <p className='xui-font-sz-85 xui-font-w-600'>Account</p>
-                </Link>
+                </div>
                 <Link to={'/'} className='xui-text-dc-none xui-text-black xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
                     <span><Cart /></span>
                     <div className='xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
@@ -74,6 +80,7 @@ export default function Navbar(){
                 </div>
             </nav>
         )}
+        <GlobalAuthModal />
         </>
     );
 }

@@ -6,6 +6,8 @@
     --white: #FFFFFF;
     --grey: #F5F6F6;
     --grey-iii: #F5F5F5;
+    --grey-iv: #F3F3F3;
+    --grey-v: #D9D9D9;
     --navbarHeight: 80px;
 }
 @font-face {
@@ -39,6 +41,10 @@ body{
     font-weight: 400;
     background: var(--white);
 }
+button{
+    background: transparent;
+    outline: none;
+}
 .bg-inactive-grey{
     background-color: var(--inactive-grey);
 }
@@ -50,6 +56,15 @@ body{
 }
 .bg-grey-iii{
     background-color: var(--grey-iii);
+}
+.bg-grey-iv{
+    background-color: var(--grey-iv);
+}
+.bg-grey-v{
+    background-color: var(--grey-v);
+}
+.bdr-grey-v{
+    border: 1px solid var(--grey-v);
 }
 .bg-black-secondary{
     background-color: var(--secondary-black);
@@ -132,7 +147,47 @@ body{
     width: 18px !important;
     height: 18px !important;
 }
-
+.hensard-eye-password {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+.asc-auth-form-grp{
+    margin: 1rem 0;
+}
+.or-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: var(--baseline-grid-vi);
+  }
+  .or-sign p {
+    z-index: 1;
+    background: var(--dark-purple);
+    padding: 0 var(--baseline-grid-iv);
+    color: var(--neutrals-color-50);
+  }
+  .or-sign::before,
+  .or-sign::after{
+    position: absolute;
+    width: calc(50% - 62px);
+    height: 2.5px;
+    background-color: var(--grey-v);
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .or-sign::before{
+    left: 0;
+  }
+  .or-sign::after{
+    right: 0;
+  }
 @media screen and (max-width: 1024px){
     
 }
