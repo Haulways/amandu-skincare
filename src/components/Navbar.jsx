@@ -33,7 +33,7 @@ export default function Navbar(){
                 </NavLink>
             </div>
             <div className='xui-d-flex xui-flex-ai-center xui-grid-gap-1'>
-                <div onClick={seeAccount} className='xui-text-dc-none xui-text-black xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
+                <div onClick={seeAccount} className='xui-text-dc-none xui-cursor-pointer xui-text-black xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
                     <span><ProfileLight /></span>
                     <p className='xui-font-sz-85 xui-font-w-600'>Account</p>
                 </div>
