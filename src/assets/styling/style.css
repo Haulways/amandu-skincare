@@ -9,6 +9,7 @@
     --grey-iv: #F3F3F3;
     --grey-v: #D9D9D9;
     --grey-vi: #D7D7D7;
+    --grey-vii: #D3D3D3;
     --navbarHeight: 80px;
 }
 @font-face {
@@ -226,7 +227,7 @@ button{
 .asc-cart-table-holder tbody tr{
     border-bottom: 1px solid #7A7A7A;
 }
-.asc-cart-delivery{
+.asc-cart-delivery, .asc-delivery-form{
     box-shadow: 0px -2.21px 6.62px 0px #D3D3D380;
 }
 .xui-radio-btn {
@@ -265,8 +266,8 @@ button{
     content: "";
     position: absolute;
     top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-80%, -50%);
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -277,6 +278,20 @@ button{
   
   .xui-radio-btn input:checked + .xui-radio-btn-label::after {
     opacity: 1;
+  }
+  .asc-delivery-form .asc-auth-form-grp label{
+    display: flex;
+    font-size: 80%;
+  }
+  .asc-delivery-form{
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .asc-delivery-form .asc-auth-form-grp input, .asc-delivery-form .asc-auth-form-grp select{
+    background-color: var(--grey-vii);
+    color: var(--inactive-grey);
+    border-radius: .5rem;
+    font-size: 80%;
   }
 @media screen and (max-width: 1024px){
     
