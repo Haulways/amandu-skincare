@@ -85,7 +85,7 @@ const RecoveryVerification = ({ setStep }) => {
                     )}
                 </div>
                 <div className="asc-auth-form-grp">
-                    <button className={"xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white " + (isDisabled || seconds > 0 ? 'bg-grey-vi color-inactive-grey' : 'xui-bg-black')} disabled={isDisabled || seconds > 0}>Continue</button>
+                    <button onClick={() => setStep(4)} className={"xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white " + (isDisabled || seconds > 0 ? 'bg-grey-vi color-inactive-grey' : 'xui-bg-black')} disabled={isDisabled || seconds > 0}>Continue</button>
                 </div>
             </form>
         </section>

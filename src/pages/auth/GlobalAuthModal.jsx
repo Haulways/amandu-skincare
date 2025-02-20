@@ -6,6 +6,8 @@ import Signin from './Signin';
 import Close from "../../assets/custom-icons/Close";
 import AccountRecovery from './AccountRecovery';
 import RecoveryVerification from './RecoveryVerification';
+import FullAccountRecovery from './FullAccountRecovery';
+import SignUp from './Signup';
 
 const GlobalAuthModal = () => {
     const [ isDisabled, setIsDisabled ] = useState(false);
@@ -38,10 +40,10 @@ const GlobalAuthModal = () => {
                     <RecoveryVerification setStep={setStep} />
                 </>}
                 {step === 4 && <>
-                    <h1>Full Account Recovery</h1>
+                    <FullAccountRecovery setStep={setStep} />
                 </>}
                 {step === 5 && <>
-                    <h1>Signup</h1>
+                    <SignUp setStep={setStep} />
                 </>}
             </div>
         </section>
