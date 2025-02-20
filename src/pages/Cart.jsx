@@ -109,7 +109,7 @@ const Cart = () => {
                                         <span className='xui-w-35 xui-d-flex xui-flex-ai-center xui-flex-jc-center'><Key /></span>
                                         <div onClick={(() => {setAddDeliveryLocation(true)})} className='xui-cursor-pointer xui-pl-1 xui-d-flex xui-flex-ai-center xui-flex-jc-space-between' style={{width: 'calc(100% - 35px)'}}>
                                             <p className='xui-font-w-600 xui-font-sz-85'>Add delivery location</p>
-                                            <span className='xui-w-35 xui-d-flex xui-flex-ai-center xui-flex-jc-center'><ChevronRight color='black' /></span>
+                                            <ChevronRight color='black' />
                                         </div>
                                     </div>
                                 </div>
