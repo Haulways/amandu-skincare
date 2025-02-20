@@ -7,7 +7,7 @@ const Header = () => {
         <>
             <section className='xui-py-3 xui-bg-sz-cover xui-bg-pos-center xui-text-white xui-container' style={{backgroundImage: `url('${HeaderBG}')`}}>
                 <h3 className='xui-font-sz-300 xui-font-w-500'>Face</h3>
-                <Breadcrumbs current={'Face'} array={[]} />
+                <Breadcrumbs current={'Face'} array={[]} color='white' textColor='xui-text-white' />
             </section>
         </>
     );

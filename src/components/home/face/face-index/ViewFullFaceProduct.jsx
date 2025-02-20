@@ -24,7 +24,7 @@ const ViewFullFaceProduct = () => {
     <>
       <section className='xui-py-3 xui-bg-sz-cover xui-bg-pos-center xui-text-white xui-container' style={{backgroundImage: `url('${HeaderBG}')`}}>
         <h3 className='xui-font-sz-300 xui-font-w-500'>Face</h3>
-        <Breadcrumbs current={'Radiance Renewal Serum'} array={[{name: 'Face', path: '/face'}]} />
+        <Breadcrumbs current={'Radiance Renewal Serum'} array={[{name: 'Face', path: '/face'}]} color='white' textColor='xui-text-white' />
       </section>
       <section className='xui-container xui-py-5'>
         <div className='xui-d-grid xui-lg-grid-col-3 xui-grid-col-1 xui-grid-gap-1'>
