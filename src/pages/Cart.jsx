@@ -140,6 +140,7 @@ const Cart = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <button type="submit" className="xui-mt-2 xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white xui-font-sz-80 ">Checkout</button>
                             </div>
                         </div>
                     </div>
