@@ -199,7 +199,7 @@ const Cart = () => {
                             <div className="xui-d-grid xui-grid-col-1 xui-lg-grid-col-3 xui-grid-gap-1 xui-mt-1-half">
                                 <div></div>
                                 <div className="asc-auth-form-grp">
-                                    <button type="submit" className="xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white xui-font-sz-80 " disabled={isDisabled}>Update Changes</button>
+                                    <button type="submit" className="xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white xui-font-sz-80 " disabled={isDisabled}>Add</button>
                                 </div>
                                 <div></div>
                             </div>
