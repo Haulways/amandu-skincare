@@ -12,7 +12,8 @@ export default function Navbar(){
     || location.pathname === '/face'
     || location.pathname.startsWith('/face/')
     || location.pathname === '/bath-and-body'
-    || location.pathname === '/perfumes-and-scents';
+    || location.pathname === '/perfumes-and-scents'
+    || location.pathname === '/cart';
 
     const seeAccount = () => {
         window.xuiModalShow('auth-modal');
@@ -37,7 +38,7 @@ export default function Navbar(){
                     <span><ProfileLight /></span>
                     <p className='xui-font-sz-85 xui-font-w-600'>Account</p>
                 </div>
-                <Link to={'/'} className='xui-text-dc-none xui-text-black xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
+                <Link to={'cart'} className='xui-text-dc-none xui-text-black xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
                     <span><Cart /></span>
                     <div className='xui-d-flex xui-flex-ai-center xui-grid-gap-half'>
                         <p className='xui-font-sz-85 xui-font-w-600'>Cart</p>

@@ -14,6 +14,7 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Brands = lazy(() => import('./pages/home-subpages/Brands'));
 const Face = lazy(() => import('./pages/home-subpages/Face'));
+const Cart = lazy(() => import('./pages/Cart'));
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='face/:uid' element={<ViewFullFaceProduct />} />
             <Route path='bath-and-body' element={<BathAndBody />} />
             <Route path='perfumes-and-scents' element={<PerfumesAndScents />} />
+            <Route path='cart' element={<Cart />} />
             <Route path='*' element={<h1>No Match</h1>} />
           </Routes>
         </Suspense>

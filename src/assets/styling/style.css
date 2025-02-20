@@ -206,6 +206,26 @@ button{
     content: '';
     position: absolute;
 } */
+.asc-cart-table-holder{
+    box-shadow: 0px 4.58px 4.58px 0px #00000040, 0px -11.44px 11.44px 0px #F5F5F5; background: #FFFFFF;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 1rem;
+}
+.asc-cart-table-holder .asc-cart-table{
+    border-collapse: collapse;
+}
+
+.asc-cart-table-holder thead tr th{
+    padding: 1rem 0;
+    text-align: left;
+    border-bottom: 1px solid #7A7A7A;
+}
+.asc-cart-table-holder tbody tr td{
+    padding: 1rem 1rem 1rem 0;
+}
+.asc-cart-table-holder tbody tr{
+    border-bottom: 1px solid #7A7A7A;
+}
 @media screen and (max-width: 1024px){
     
 }

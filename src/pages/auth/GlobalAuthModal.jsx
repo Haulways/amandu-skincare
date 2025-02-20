@@ -27,7 +27,7 @@ const GlobalAuthModal = () => {
             <div className="xui-pos-relative xui-modal-content xui-max-w-650 xui-w-fluid-100 xui-bdr-rad-1">
                 <div className="xui-d-flex xui-flex-jc-flex-end">
                     <div onClick={closeAuthModal} className="xui-w-50 xui-h-50 xui-bdr-rad-circle hensard-bg-blue xui-text-white xui-d-inline-flex xui-flex-ai-center xui-flex-jc-center xui-cursor-pointer">
-                        <Close />
+                        <Close width='45' height='45' />
                     </div>
                 </div>
                 {step === 1 && <>

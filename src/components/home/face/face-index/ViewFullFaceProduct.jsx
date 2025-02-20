@@ -32,9 +32,9 @@ const ViewFullFaceProduct = () => {
             <h3 className='xui-font-sz-200 xui-font-w-600'>Radiance Renewal Serum</h3>
             <p className='xui-font-sz-90 xui-mt-1'>Price: <span className='xui-font-sz-120 xui-font-w-600'>NGN 9,999.99</span></p>
             <div className='xui-py-half xui-px-1 xui-max-w-150 xui-w-fluid-100 xui-bdr-black xui-bdr-rad-half xui-bdr-w-1 xui-bdr-s-solid xui-mt-1 xui-d-inline-flex xui-flex-ai-center xui-flex-jc-space-between'>
-              <div onClick={handleDecrement} className='xui-cursor-pointer'><Subtract width='15' height='4' /></div>
+              <div onClick={handleDecrement} className='xui-cursor-pointer xui-d-flex xui-flex-ai-center'><Subtract width='15' height='4' /></div>
               <div className='xui-font-sz-85'>{quantity}</div>
-              <div onClick={handleIncrement} className='xui-cursor-pointer'><Add width='15' height='21' /></div>
+              <div onClick={handleIncrement} className='xui-cursor-pointer xui-d-flex xui-flex-ai-center'><Add width='15' height='21' /></div>
             </div>
             <div className='xui-d-grid xui-grid-col-2 xui-grid-gap-1 xui-mt-1'>
                 <Link to='/' className='xui-text-dc-none xui-font-sz-90 xui-bg-black xui-text-white xui-btn xui-text-center xui-bdr-rad-half'>Buy Now</Link>
