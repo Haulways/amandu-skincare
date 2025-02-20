@@ -46,7 +46,7 @@ const Signin = ({ setStep }) => {
                         <button className="xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white " disabled={isDisabled}>Sign in</button>
                     </div>
                     <div className="asc-auth-form-grp xui-d-flex xui-flex-jc-flex-end">
-                        <p className='xui-font-sz-85 xui-font-w-500' onClick={() => setStep(2)}>Forgot password?</p>
+                        <p className='xui-font-sz-85 xui-font-w-500 xui-cursor-pointer' onClick={() => setStep(2)}>Forgot password?</p>
                     </div>
                 </form>
                 <div className="or-sign xui-font-sz-85 xui-opacity-8">

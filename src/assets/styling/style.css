@@ -8,6 +8,7 @@
     --grey-iii: #F5F5F5;
     --grey-iv: #F3F3F3;
     --grey-v: #D9D9D9;
+    --grey-vi: #D7D7D7;
     --navbarHeight: 80px;
 }
 @font-face {
@@ -65,6 +66,9 @@ button{
 }
 .bdr-grey-v{
     border: 1px solid var(--grey-v);
+}
+.bg-grey-vi{
+    background-color: var(--grey-vi);
 }
 .bg-black-secondary{
     background-color: var(--secondary-black);
@@ -165,15 +169,15 @@ button{
     align-items: center;
     position: relative;
     margin-bottom: var(--baseline-grid-vi);
-  }
-  .or-sign p {
+}
+.or-sign p {
     z-index: 1;
     background: var(--dark-purple);
     padding: 0 var(--baseline-grid-iv);
     color: var(--neutrals-color-50);
-  }
-  .or-sign::before,
-  .or-sign::after{
+}
+.or-sign::before,
+.or-sign::after{
     position: absolute;
     width: calc(50% - 62px);
     height: 2.5px;
@@ -181,13 +185,27 @@ button{
     content: '';
     top: 50%;
     transform: translateY(-50%);
-  }
-  .or-sign::before{
+}
+.or-sign::before{
     left: 0;
-  }
-  .or-sign::after{
+}
+.or-sign::after{
     right: 0;
-  }
+}
+.pincode-input-container{
+    display: flex !important;
+    justify-content: space-between;
+}
+.pincode-input-container input{
+    border-radius: .5rem;
+    height: 60px !important;
+    border: 1px solid var(--inactive-grey) !important;
+    position: relative;
+}
+/* .pincode-input-container input::before{
+    content: '';
+    position: absolute;
+} */
 @media screen and (max-width: 1024px){
     
 }

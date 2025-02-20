@@ -26,7 +26,7 @@ const AccountRecovery = ({ setStep }) => {
                         {errors.email && <span className="xui-form-error-msg">{errors.email.message}</span>}
                     </div>
                     <div className="asc-auth-form-grp">
-                        <button className="xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white " disabled={isDisabled}>Continue</button>
+                        <button onClick={() => setStep(3)} className="xui-btn xui-btn-block xui-bdr-rad-half xui-bg-black xui-text-white " disabled={isDisabled}>Continue</button>
                     </div>
                 </form>
             </div>

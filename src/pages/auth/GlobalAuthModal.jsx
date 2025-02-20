@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import Signin from './Signin';
 import Close from "../../assets/custom-icons/Close";
 import AccountRecovery from './AccountRecovery';
+import RecoveryVerification from './RecoveryVerification';
 
 const GlobalAuthModal = () => {
     const [ isDisabled, setIsDisabled ] = useState(false);
@@ -34,7 +35,7 @@ const GlobalAuthModal = () => {
                     <AccountRecovery setStep={setStep} />
                 </>}
                 {step === 3 && <>
-                    <h1>Verification Code</h1>
+                    <RecoveryVerification setStep={setStep} />
                 </>}
                 {step === 4 && <>
                     <h1>Full Account Recovery</h1>
