@@ -5,6 +5,7 @@ import Envelope from '../../assets/custom-icons/Envelope';
 import Lock from '../../assets/custom-icons/Lock';
 import Google from "../../assets/images/google.png";
 import Apple from "../../assets/images/apple.png";
+import GoogleAuth from '../../components/GoogleAuth';
 
 const SignUp = ({ setStep }) => {
     const { register, handleSubmit, setValue, formState: { errors }, watch, reset } = useForm();
@@ -66,10 +67,7 @@ const SignUp = ({ setStep }) => {
                     <p>Preferably</p>
                 </div>
                 <div className="asc-auth-form-grp">
-                    <button className="xui-py-half xui-bdr-rad-1 xui-d-block xui-w-fluid-100 xui-px-1-half bdr-grey-v xui-bdr-rad-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-1">
-                        <img src={Google} alt="" className='xui-img-30' />
-                        <p className='xui-font-w-600 xui-font-sz-100'>Continue with Google</p>
-                    </button>
+                    <GoogleAuth />
                 </div>
                 <div className="asc-auth-form-grp">
                     <button className="xui-py-half xui-bdr-rad-1 xui-d-block xui-w-fluid-100 xui-px-1-half bdr-grey-v xui-bdr-rad-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-1">
